@@ -1,0 +1,171 @@
+/* Apply a uniform width to all input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Adjust the width as needed */
+    max-width: 400px; /* Set a maximum width */
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    box-sizing: border-box; /* Ensure padding and border don't increase the width */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            background-color: #343434;
+        }
+
+        #registerModal {
+            display: none; 
+            position: fixed; 
+            z-index: 1000; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            background-color: rgba(0, 0, 0, 0.5); 
+        }
+
+        #loginModal {
+            display: none; 
+            position: fixed; 
+            z-index: 1000; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            background-color: rgba(0, 0, 0, 0.5); 
+        }
+
+        .modal-content {
+            position: absolute;
+            background-color: #343434;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1001;
+        }
+
+        #openRegisterModalBtn {
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            background-color: #ff7000;
+            color: white;
+            border-radius: 5px;
+            margin: 0;
+            position: absolute;
+            top: 55%; /* Adjusted to be below the login button */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-top: 3vh;
+        }
+
+        #openModalBtn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #ff7000;
+            color: white;
+            border-radius: 5px;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .register-container {
+            text-align: center;
+        }
+
+        .login-container {
+            text-align: center;
+        }
+        
+        .register-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background: #ff7000;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+
+        .login-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: #fff;
+            background: #ff7000;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        
+        .register-button:hover {
+            background-color: #ff9442;
+        }
+
+        .login-button:hover {
+            background: #ff9442;
+        }
+        
+        .topnav {
+            overflow: hidden;
+            background-color: #343434;
+            position: relative;
+        }
+        
+        .topnav img {
+            float: left;
+            width: 50px; 
+            height: auto;
+            padding: 10px 10px 10px 10px; 
+        }
+        
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 30px;
+            line-height: 50px;
+        }
+        
+        .topnav a:hover {
+            background-color: #ff7000;
+            color: black;
+        }
+        
+        .topnav a.active {
+            background-color: #ff7000;
+            color: white;
+        }
+
